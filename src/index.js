@@ -1,9 +1,7 @@
 function toChars(str) {
-	var i=0, arr=[];
-	while (i < str.length) {
-		arr.push(str.charCodeAt(i++));
-	}
-	return arr;
+	return str.split('').map(function(n, i) {
+		return str.charCodeAt(i)
+	})
 }
 
 function reduce(hasher, base, value) {
